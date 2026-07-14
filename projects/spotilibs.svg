@@ -1,0 +1,25 @@
+svg_content = """
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #121212; }
+      .text-spoti { font-family: 'Circular', 'Montserrat', 'Helvetica Neue', sans-serif; font-weight: 700; font-size: 110px; fill: #1ED760; letter-spacing: -2px; }
+      .text-libs { font-family: 'Circular', 'Montserrat', 'Helvetica Neue', sans-serif; font-weight: 700; font-size: 110px; fill: #FFFFFF; letter-spacing: -2px; }
+    </style>
+  </defs>
+  <!-- Background -->
+    <rect width="800" height="300" class="bg" />
+    <!-- Logo Text -->
+      <g transform="translate(140, 185)">
+        <text class="text-spoti" x="0">
+          Spoti
+        </text>
+        <text class="text-libs" x="275">
+          libs
+        </text>
+      </g>
+    </svg>
+    """
+
+with open("spotilibs_logo.svg", "w", encoding="utf-8") as f:
+    f.write(svg_content)
